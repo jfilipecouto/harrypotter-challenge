@@ -1,50 +1,41 @@
-# React + TypeScript + Vite
+# Harry Potter Mischief Manager - Frontend Coding Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Instructions
 
-Currently, two official plugins are available:
+Use the Harry Potter API to fetch a list of characters and spells.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**API:** [Harry Potter API](https://hp-api.onrender.com/)
 
-## Expanding the ESLint configuration
+## Requirements
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Language:** React (TypeScript preferred)
+- **Styling:** Use your preferred approach to style the application.
+- **Views:**
+  - Display a list of all characters.
+  - Display a list of all students.
+  - Display a list of all staff members.
+- **Character Details:** Users should be able to select a character and view their details on a separate page.
+- **Navigation:** The application should have a clear way to navigate between views.
+- **Favorites:** Users should be able to favorite characters.
+- **Preferred House:** Users should be able to set their preferred house (Gryffindor, Slytherin, Hufflepuff, Ravenclaw).
+- **Design:** The application should use colors and fonts that make aesthetic sense.
 
-- Configure the top-level `parserOptions` property like this:
+## Important details
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+We used ant-d to obtain powerful components that matched the project, and we also used axios, react-router-dom and vite to assemble the project.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+In terms of modularity, we used the atomic design pattern.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Simple and fluid screens were used to display pagination.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## How to run
+
+- Run npm install
+- Run npm run dev
+
+## Requirements to run
+
+- You will need node 22
+- npm 11.0.0
+
+
