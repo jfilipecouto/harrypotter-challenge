@@ -10,7 +10,7 @@ export const fetchCharacter = async (id: string): Promise<GenericCharacter[]> =>
     );
     return response.data;
   } catch (error) {
-    console.error("Erro ao buscar personagens:", error);
+    console.error("Error fetching characters:", error);
     throw error;
   }
 };
